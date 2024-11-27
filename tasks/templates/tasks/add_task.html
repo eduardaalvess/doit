@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Tarefa</title>
+</head>
+<body>
+    <h1>Adicionar Tarefa</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Título da tarefa">
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
